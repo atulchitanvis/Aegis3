@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Turn off the stove. Smother flames with a pot lid or larger pan, if possible. Protect your hand with an oven mitt or wrapped dish towel."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step1_panfire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:src="@drawable/step2_panfire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Use of an approved portable fire extinguisher only if you are familiar with its safe operation."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step3_panfire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 3"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Never throw water or use flour on a grease fire. Not even baking powder."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step4_panfire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <ImageView
+            android:src="@drawable/step5_panfire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 4"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="In case of an oven fire, close the oven door and turn off the oven. Never touch or attempt to carry a flaming pot. The contents may spill, spread and burn you."
+            android:textSize="20sp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 5"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="If the fire is not brought under control immediately, get youreslf and your family out and call 101."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>

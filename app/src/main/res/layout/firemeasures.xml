@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Immediately pull the nearest fire alarm station as you exit the building."
+            android:textSize="20sp"/>
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="match_parent"
+            android:paddingTop="5dp"
+            android:layout_height="250dp"
+            android:background="@drawable/firealarm"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="When evacuating from the building, be sure to feel doors for heat before opening them to be sure there is no fire danger on the otherside."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step2_fire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 3"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="If there is smoke in the air, stay low to the ground, especially your head, to reduce inhalation exposure. Keep one hand on the wall to prevent disorientation and crawl to the nearest exit."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step3_fire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 4"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Once away and clear from the danger, call your report contact and inform them of the fire."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step4_fire"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 5"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Go to your refuge area or terrace and await further instructions from emergency personnel."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>

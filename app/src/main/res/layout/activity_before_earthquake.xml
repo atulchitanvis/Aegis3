@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Make sure you have a fire extinguisher, first aid kit, a battery-powered radio, a flashlight, and extra batteries at home and learn first aid."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step1_beforeearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="8dp"/>
+
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Learn how to turn off the gas, water, and electricity."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step3_beforeearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 3"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Make up a plan of where to meet your family after an earthquake."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step4_beforeearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 4"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Don't leave heavy objects on shelves (they'll fall during a quake)."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step5_beforeearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 5"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Anchor heavy furniture, cupboards, and appliances to the walls or floor."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step6_beforeearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 6"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Learn the earthquake plan at your school or workplace."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,151 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.spitit.EmergencyAdminActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/main_toolbar"
+            android:id="@+id/emergency_toolbar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Location: "
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Choose: "
+                android:textStyle="bold"
+                android:textSize="24sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/fire"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Fire"/>
+
+                <CheckBox
+                    android:id="@+id/earthquake"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Earthquake"/>
+
+                <CheckBox
+                    android:id="@+id/other"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Other"/>
+
+                <EditText
+                    android:id="@+id/other_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Describe emergency"
+                    android:visibility="gone"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Blueprint: "
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_marginBottom="8dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/blueprint"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:background="@drawable/border"
+                    android:contentDescription="Blueprint" />
+
+                <ImageButton
+                    android:id="@+id/action_add_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:src="@mipmap/ic_add_a_photo_black_24dp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Tips: "
+                android:textStyle="bold"
+                android:textSize="24sp" />
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/tips"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/border"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/emergency_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency"
+            android:layout_margin="8dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:background="#ff0000"/>
+
+    </LinearLayout>
+
+</ScrollView>

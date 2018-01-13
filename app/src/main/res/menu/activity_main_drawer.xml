@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_emergency"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Emergency"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_portal"
+            android:icon="@drawable/ic_menu_send"
+            android:title="Emergency Portal" />
+        <item
+            android:id="@+id/nav_instructions"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Instructions" />
+    </group>
+
+    <group
+        android:title="Information"
+        android:checkableBehavior="single">
+        <menu>
+            <item
+                android:id="@+id/nav_fire"
+                android:icon="@mipmap/fire"
+                android:title="Fire" />
+            <item
+                android:id="@+id/nav_earthquake"
+                android:icon="@mipmap/earthquake"
+                android:title="Earthquake" />
+            <item
+                android:id="@+id/nav_fireExtinguisher"
+                android:icon="@mipmap/extinguisher"
+                android:title="Fire Extinguisher" />
+            <item
+                android:id="@+id/nav_cpr"
+                android:icon="@mipmap/cpr"
+                android:title="CPR" />
+        </menu>
+    </group>
+
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_sos"
+                android:icon="@drawable/ic_menu_share"
+                android:title="SOS no." />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/about"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>

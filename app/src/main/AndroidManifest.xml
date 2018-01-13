@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android.spitit">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permisson.READ_GSERVICES"/>
+
+    <uses-feature
+        android:name="android.hardware.location.gps"
+        android:required="true" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:allowBackup="true">
+        <activity android:name=".LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".LocationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".AddContactsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MyProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".EmergencyAdminActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity android:name=".EmergencyActivity"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".EmergencyPortalFragment"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MapsActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FireMeasures"
+            android:label="Fire Safety Measures" />
+        <activity
+            android:name=".PanFire"
+            android:label="Pan Fire / Grease Fire Measures" />
+        <activity
+            android:name=".LpgLeakage"
+            android:label="LPG Gas Leakage Measures" />
+        <activity
+            android:name=".beforeEarthquakeActivity"
+            android:label="What to do Before an Earthquake?" />
+        <activity
+            android:name=".afterEarthquakeActivity"
+            android:label="What to do After an Earthquake?" />
+        <activity
+            android:name=".duringEarthquakeActivity"
+            android:label="What to do During an Earthquake?" />
+        <activity
+            android:name=".IndoorEarthquakeActivity"
+            android:label="Indoor" />
+        <activity
+            android:name=".OutdoorEarthquakeActivity"
+            android:label="Outdoor" />
+        <activity
+            android:name=".VehicleEarthquakeActivity"
+            android:label="Moving Vehicle" />
+        <activity
+            android:name=".DebrisEarthquakeActivity"
+            android:label="Trapped Under Debris" />
+    </application>
+
+</manifest>

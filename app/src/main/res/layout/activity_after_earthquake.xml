@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Check yourself and others for injuries. Provide first aid for anyone who needs it."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step1_afterearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <ImageView
+            android:src="@drawable/step1_afterearth1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Check water, gas, and electric lines for damage. If any are damaged, shut off the valves. Check for the smell of gas. If you smell it, open all the windows and doors, leave immediately, and report it to the authorities (use someone else's phone)."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step2_afterearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+        <ImageView
+            android:src="@drawable/step2_afterearth1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 3"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Turn on the radio. Don't use the phone unless it's an emergency."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step3_afterearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 4"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Stay out of damaged areas and buildings and move towards an open ground."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step4_afterearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 5"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Be careful around broken glass and debris. Wear boots or sturdy shoes to keep from cutting your feet."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step5_afterearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 6"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Be careful of chimneys (they may fall on you)."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 7"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Stay away from beaches. Tsunamis and seiches sometimes hit after the ground has stopped shaking."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 8"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="If you're at school or work, follow the emergency plan or the instructions of the person in charge."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 9"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Expect aftershocks."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step9_afterearth"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:layout_marginBottom="16dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="How to use an ABC Fire Extinguisher?"
+            android:textSize="25sp"
+            android:textStyle="bold|italic"/>
+
+        <ImageView
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fire_extinguisher"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Pull the pin."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Aim the nozzle at the base of the fire. Hitting the tops of the flame with the extinguisher won't be effective."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 3"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Squeeze the trigger. In a controlled manner, squeeze the trigger to release the agent."
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 4"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sweep from side to side. Sweep the nozzle from side to side until the fire is put out"
+            android:layout_marginBottom="16dp"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+</ScrollView>

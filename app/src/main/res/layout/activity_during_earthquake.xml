@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:textSize="30sp"
+            android:text="Where are you?"
+            android:layout_gravity="center"
+            android:textStyle="bold"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"></View>
+
+        <TextView
+            android:id="@+id/indoor_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Indoors"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:onClick="onIndoorEarthquake"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"></View>
+
+        <TextView
+            android:id="@+id/outdoor_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Outdoors"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:onClick="onOudoorEarthquake"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"></View>
+
+        <TextView
+            android:id="@+id/vehicle_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Moving Vehicle"
+            android:onClick="onVehicleEarthquake"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"></View>
+
+        <TextView
+            android:id="@+id/debris_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trapped Under Debris"
+            android:onClick="onDebrisEarthquake"
+            android:textSize="30sp"
+            android:padding="10dp"
+            android:textAppearance="?android:textAppearanceMedium" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"></View>
+
+    </LinearLayout>
+</ScrollView>

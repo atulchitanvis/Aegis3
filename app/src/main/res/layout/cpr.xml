@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="16dp"
+    android:layout_marginTop="?attr/actionBarSize">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cardiopulmonary Resuscitation (CPR)"
+            android:textSize="25sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="(When a person stops breathing and his heart stops beating.)"
+            android:padding="8dp"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Check for unresponsiveness.If you receive no response, check for a pulse or breathing while someone calls emergency services."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step1_cpr"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="In order to perform hands-only CPR, the victim should be positioned on his back (supine), preferably on a firm surface, with the head facing up. If the person is on his sides or stomach (prone), then gently roll him onto his back while trying to support his head and neck."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step2_cpr"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 3"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Place one hand directly over the center of the person's chest (between the person's nipples, generally) and your other hand on top of the first for reinforcement. Press down on the victim's chest firmly and quickly — aim for about 30 chest compressions a minute until paramedics arrive."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step3_cpr"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 4"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=" then proceed to open the person's airway using the head-tilt, chin-lift technique, or the jaw-thrust if you suspect a neck/head/spine injury. Put your palm on his forehead and gently tilt (extend) his head back a little. Then with your other hand, gently lift the chin forward to open up his airway, making it easier to give him oxygen."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step4_cpr"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+    </LinearLayout>
+</ScrollView>

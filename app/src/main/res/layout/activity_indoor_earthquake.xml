@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 1"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DROP to the ground; take COVER by getting under a sturdy table or other piece of furniture; and HOLD ON until the shaking stops."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step1_indoor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 2"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Stay away from glass, windows, outside doors and walls, and anything that could fall, such as lighting fixtures or furniture."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step2_indoor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 3"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:paddingTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Stay in bed if you are there when the earthquake strikes. Hold on and protect your head with a pillow, unless you are under a heavy light fixture that could fall. In that case, move to the nearest safe place."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step3_indoor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 4"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Do not use a doorway except if you know it is a strongly supported, load-bearing doorway and it is close to you."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step4_indoor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 5"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Do not exit a building during the shaking."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step5_indoor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 6"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="DO NOT use the elevators."
+            android:textSize="20sp"/>
+
+        <ImageView
+            android:src="@drawable/step6_indoor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:padding="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Step 7"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Be aware that the electricity may go out or the sprinkler systems or fire alarms may turn on."
+            android:textSize="20sp"/>
+
+
+    </LinearLayout>
+</ScrollView>

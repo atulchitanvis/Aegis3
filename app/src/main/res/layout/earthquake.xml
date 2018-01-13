@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginTop="?attr/actionBarSize">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/before_earthquake"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Dynamic (Still to make dynamic)-->
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/before_earthquake" />
+
+                <!--Dynamic (still to make dynamic)-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="What to do before an Earthquake?"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+                <!--Static -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:text="We cannot stop an Earthquake, but we can arm ourselves with knowledge"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/during_earthquake"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Dynamic (Still to make dynamic)-->
+                <ImageView
+                    android:src="@drawable/during_earthquake"
+                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_height="130dp" />
+
+                <!--Dynamic (still to make dynamic)-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What to do during an Earthquake?"
+                    android:layout_gravity="center"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!--Static -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:text="Do not panic, Stay calm"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/after_earthquake"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <!--Dynamic (Still to make dynamic)-->
+                <ImageView
+                    android:src="@drawable/after_earthquake"
+                    android:layout_width="match_parent"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_height="130dp"
+                    />
+
+                <!--Dynamic (still to make dynamic)-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="What to do after an Earthquake?"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+                <!--Static -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:text="We learn Geology the morning after the Earthquake"
+                    android:layout_marginTop="5dp"/>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

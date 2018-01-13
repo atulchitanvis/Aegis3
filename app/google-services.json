@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "344860503657",
+    "firebase_url": "https://aegis2-8b15c.firebaseio.com",
+    "project_id": "aegis2-8b15c",
+    "storage_bucket": "aegis2-8b15c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344860503657:android:60641a45db69dd55",
+        "android_client_info": {
+          "package_name": "com.example.android.spitit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344860503657-ofriim8qtqp1t1fp50kq0bj3bs0klj48.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.spitit",
+            "certificate_hash": "81796d4ef12dafdc8affb04fc0aed366d9703172"
+          }
+        },
+        {
+          "client_id": "344860503657-jn5ecm47s8f3u506hubgar8qads9n7fb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhK-jVzuiFmdQE6AAYBUM7hAnjgh7wp0M"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344860503657-jn5ecm47s8f3u506hubgar8qads9n7fb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:id="@+id/fireMeasures"
+            android:layout_height="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Dynamic (Still to make dynamic)-->
+                <ImageView
+                    android:src="@drawable/fire"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"/>
+                <!--Dynamic (still to make dynamic)-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Fire"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+                <!--Static -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:text="Measures to be taken in case of building fires."
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/panFire"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Dynamic (Still to make dynamic)-->
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/panfire"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp" />
+
+                <!--Dynamic (still to make dynamic)-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="Pan Fire / Grease Fire"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+                <!--Static -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:text="Measures to be taken in case of pan/grease fire."
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/lpgLeakage"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--Dynamic (Still to make dynamic)-->
+                <ImageView
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/gasleakage"
+                    android:layout_width="match_parent"
+                    android:layout_height="125dp"/>
+
+                <!--Dynamic (still to make dynamic)-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:text="LPG Gas Leakage"
+                    android:layout_gravity="center"
+                    android:textStyle="bold" />
+
+                <!--Static -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:textSize="15sp"
+                    android:text="Measures to be taken in case of LPG gas leakage."
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>

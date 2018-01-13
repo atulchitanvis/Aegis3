@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.spitit.AddContactsActivity"
+    android:paddingBottom="16dp">
+
+    <include layout="@layout/main_toolbar"
+        android:id="@+id/add_contact_toolbar"/>
+
+    <LinearLayout
+        android:id="@+id/note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginTop="56dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NOTE:"
+            android:textStyle="bold"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n1. Choose 3 different contacts.\n2. Message will be sent to these 3 contacts only in case of emergency.\n3. Standard messaging charges apply."/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_marginTop="56dp"
+        android:layout_below="@id/note">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp">
+
+            <FrameLayout
+                android:id="@+id/photo1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/hint1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Click to add contact"
+                    android:gravity="center"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:gravity="center"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/no1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No.:"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp">
+
+            <FrameLayout
+                android:id="@+id/photo2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp" />
+
+                <TextView
+                    android:id="@+id/hint2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Click to add contact"
+                    android:gravity="center"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/no2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No.:"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp">
+
+            <FrameLayout
+                android:id="@+id/photo3"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/border">
+
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"/>
+
+                <TextView
+                    android:id="@+id/hint3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Click to add contact"
+                    android:gravity="center"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/name3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/no3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No.:"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="save"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:layout_marginRight="16dp"/>
+
+</RelativeLayout>
