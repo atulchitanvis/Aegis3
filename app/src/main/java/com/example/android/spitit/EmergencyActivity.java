@@ -1,7 +1,9 @@
 package com.example.android.spitit;
 
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.PendingIntent;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
@@ -15,6 +17,7 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +30,7 @@ import com.google.android.gms.location.Geofence;
 import com.google.android.gms.location.GeofencingRequest;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -34,22 +38,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
-public class EmergencyActivity extends AppCompatActivity {
+public class EmergencyActivity extends MainActivity {
 
     private RecyclerView mEmergencyList;
     private DatabaseReference mDatabase;
     View myView;
+    private FirebaseAuth mAuth;
     private static final int REQUEST_CHECK_SETTINGS_GPS = 2;
     private static final int REQUEST_ID_MULTIPLE_PERMISSIONS = 10;
     private ArrayList<Geofence> mGeofenceList=new ArrayList<>();
     private GoogleApiClient mGoogleApiClient;
+    Button endEmergency;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_emergency);
 
+        endEmergency = (Button)findViewById(R.id.end_emergency);
+
         checkPermissions();
+        mAuth = FirebaseAuth.getInstance();
         Toolbar toolbar=(Toolbar)findViewById(R.id.emergency_activity_toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setTitle("Emergency");
@@ -78,6 +87,30 @@ public class EmergencyActivity extends AppCompatActivity {
                 .addApi(LocationServices.API)
                 .build();
         populateGeofenceList();
+
+        endEmergency.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(admins.contains(mAuth.getCurrentUser().getEmail()))
+                {
+                    new AlertDialog.Builder(EmergencyActivity.this)
+                            .setMessage("Are sure you want to end the emergency?")
+                            .setCancelable(false)
+                            .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Emergency");
+                                    mDatabase.child(mAuth.getUid()).removeValue();
+                                }
+                            })
+                            .setNegativeButton("No",null)
+                            .show();
+                }
+                else
+                    Toast.makeText(EmergencyActivity.this,"Only an admin can end an emergency!",Toast.LENGTH_LONG).show();
+
+            }
+        });
     }
 
     @Override
