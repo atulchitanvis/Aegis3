@@ -6,20 +6,15 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@mipmap/map"
             android:title="Home" />
         <item
             android:id="@+id/nav_emergency"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Emergency"
-            android:visible="false"/>
-        <item
-            android:id="@+id/nav_portal"
-            android:icon="@drawable/ic_menu_send"
-            android:title="Emergency Portal" />
+            android:icon="@mipmap/emergency"
+            android:title="Emergency"/>
         <item
             android:id="@+id/nav_instructions"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@mipmap/about"
             android:title="Instructions" />
     </group>
 
@@ -53,10 +48,6 @@
                 android:id="@+id/nav_sos"
                 android:icon="@drawable/ic_menu_share"
                 android:title="SOS no." />
-            <item
-                android:id="@+id/nav_about"
-                android:icon="@mipmap/about"
-                android:title="About" />
         </menu>
     </item>
 

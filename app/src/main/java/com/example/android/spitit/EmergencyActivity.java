@@ -49,6 +49,9 @@ public class EmergencyActivity extends MainActivity {
     private ArrayList<Geofence> mGeofenceList=new ArrayList<>();
     private GoogleApiClient mGoogleApiClient;
     Button endEmergency;
+    Button unsafe;
+    Button safe, emergencyPortal;
+    private android.support.v4.app.FragmentManager fragmentManager;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -56,6 +59,9 @@ public class EmergencyActivity extends MainActivity {
         setContentView(R.layout.activity_emergency);
 
         endEmergency = (Button)findViewById(R.id.end_emergency);
+        unsafe = (Button)findViewById(R.id.unsafe);
+        safe = (Button)findViewById(R.id.safe);
+        emergencyPortal = (Button)findViewById(R.id.emergencyPortal);
 
         checkPermissions();
         mAuth = FirebaseAuth.getInstance();
@@ -88,6 +94,17 @@ public class EmergencyActivity extends MainActivity {
                 .build();
         populateGeofenceList();
 
+        if(admins.contains(mAuth.getCurrentUser().getEmail()))
+        {
+            endEmergency.setVisibility(View.GONE);
+            emergencyPortal.setVisibility(View.GONE);
+        }
+        else
+        {
+            unsafe.setVisibility(View.GONE);
+            safe.setVisibility(View.GONE);
+        }
+
         endEmergency.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -101,6 +118,8 @@ public class EmergencyActivity extends MainActivity {
                                 public void onClick(DialogInterface dialogInterface, int i) {
                                     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Emergency");
                                     mDatabase.child(mAuth.getUid()).removeValue();
+                                    mDatabase = FirebaseDatabase.getInstance().getReference().child("messages");
+                                    mDatabase.removeValue();
                                 }
                             })
                             .setNegativeButton("No",null)
@@ -109,6 +128,27 @@ public class EmergencyActivity extends MainActivity {
                 else
                     Toast.makeText(EmergencyActivity.this,"Only an admin can end an emergency!",Toast.LENGTH_LONG).show();
 
+            }
+        });
+
+        unsafe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EmergencyActivity.this,EmergencyPortalFragment.class));
+            }
+        });
+
+        safe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(EmergencyActivity.this,"Please help the people stuck",Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        emergencyPortal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(EmergencyActivity.this,EmergencyPortalFragment.class));
             }
         });
     }

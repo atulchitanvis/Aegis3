@@ -245,4 +245,7 @@ public class EmergencyPortalFragment extends MainActivity {
         Log.d(TAG, MESSAGE_LENGTH_KEY + " = " + message_length);
     }
 
+    @Override
+    public void onBackPressed() {
+    }
 }

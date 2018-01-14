@@ -268,13 +268,6 @@ public class MainActivity extends AppCompatActivity
             fragmentManager=getSupportFragmentManager();
             fragmentManager.beginTransaction().replace(R.id.app_bar_main,new Sos()).commit();
         }
-        else if (id == R.id.nav_portal)
-        {
-            toolbar.setTitle("Emergency portal");
-            //fragmentManager=getSupportFragmentManager();
-            //fragmentManager.beginTransaction().replace(R.id.app_bar_main,new EmergencyPortalFragment()).commit();
-            startActivity(new Intent(this,EmergencyPortalFragment.class));
-        }
         else if (id == R.id.nav_fire)
         {
             toolbar.setTitle("Fire Safety");
